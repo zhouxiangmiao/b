@@ -1,0 +1,2578 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Microsoft YaHei UI";
+	font-size: 14px
+}
+.header {
+	
+	background: #F4F1F1;
+	border: 1px solid #BFBDBD; position:relative; z-index:1
+}
+.auto {
+	width: 980px;
+	margin: 0 auto;
+	height: 35px;
+}
+.header .auto {
+	width: 980px;
+	margin: 0 auto;
+	height: 35px;
+	line-height: 10px;
+}
+.header .auto .text {
+	float: left;
+}
+.header .auto .text ul li {
+	float: left;
+	margin-right: 13px;
+	cursor: pointer;
+	color: #888;
+	font-size: 12px;
+	line-height: 35px;
+}
+.header .auto .text ul li:hover {
+	color: red
+}
+.clear {
+	clear: both
+}
+.header .auto .dl {
+	float: left;
+	width: 40px;
+	background: url(images/xxjt_03.png) no-repeat right;
+	position: relative;
+	line-height: 35px;
+	cursor: pointer;
+	color: #888
+}
+.header .auto .dl:hover {
+	color: red
+}
+.header .auto .dl:hover .dl_list {
+	display: block;
+}
+.header .auto .dl .dl_list {
+	border: 1px solid #666;
+	position: absolute;
+	width: 120px;
+	left: -61px;
+	top: 36px;
+	height: 150px;
+	padding: 4px 15px;
+	display: none;
+	z-index: 3;
+	background: #ffffff;
+}
+.header .auto .dl .dl_list a {
+	font-size: 12px;
+	line-height: 30px;
+	border-bottom: 1px dashed #BBB8B8;
+	color: #888;
+	text-decoration: none;
+	width: 120px;
+	display: block;
+	padding: 0px;
+}
+.header .auto .dl .dl_list a:hover {
+	color: red
+}
+.header .auto .dl .dl_list a i {
+	width: 30px;
+	height: 30px;
+	float: left
+}
+
+.header .auto .dl .dl_list a i.ico1 {
+	background: url(images/dl_06.png) no-repeat 5px 8px;
+}
+.header .auto .dl .dl_list a i.ico2 {
+	background: url(images/dl_08.png) no-repeat 5px 8px;
+}
+.header .auto .dl .dl_list a i.ico3 {
+	background: url(images/dl_10.png) no-repeat 5px 8px;
+}
+.header .auto .dl .dl_list a i.ico4 {
+	background: url(images/dl_09.png) no-repeat 5px 8px;
+}
+.header .auto .dl .dl_list a i.ico5 {
+	background: url(images/dl_12.png) no-repeat 5px 8px;
+}
+.header .auto .dl .dl_list a.ab {
+	border: none
+}
+.header .text1 {
+	float: right;
+	line-height: 35px
+}
+.header .text1 .dl {
+	margin: 0 5px
+}
+.header .text1 a {
+	cursor: pointer;
+	color: #888;
+	font-size: 12px
+}
+.header .text1 a:hover {
+	color: red
+}
+.header .text1 span {
+	font-size: 9px;
+	color: #888
+}
+.content {
+	height: 550px;
+	position: relative;
+}
+.w960 {
+	width: 980px;
+	margin: 0 auto;
+}
+.content .auto .tb {
+	margin-top: 40px;
+	height: 35px
+}
+.content .auto .tb .logo {
+	width: 195px;
+	float: left
+}
+.content .auto .tb .ssk {
+	float: left;
+	width: 500px;
+}
+.content .auto .tb .ssk .t_input {
+	padding: 0px;
+	margin: 0px;
+	width: 355px;
+	height: 35px;
+	outline: none;
+	margin-left: 70px;
+	border: 1px solid #c9483c;
+	color: #868686;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 10px;
+	float: left
+}
+.content .auto .tb .ssk .fdj {
+	float: left;
+	background: url(images/header_03.png) no-repeat;
+	cursor: pointer
+}
+.content .auto .tb .text2 {
+	height: 38px;
+	float: left;
+	margin-left: 70px;
+	margin-top: 5px;
+}
+.content .auto .tb .text2 a {
+	font-size: 14px;
+	color: #655;
+	padding: 8px 15px;
+}
+.content .auto .tb .text2 a.wddy {
+	border: 1px solid #ebe6e1;
+	
+	cursor: pointer;width:150px;
+}
+.content .auto .tb .text2 a.wdsj {
+	border: 1px solid #ebe6e1;
+	border-left: none;
+	cursor: pointer;
+}
+.content .auto .tb .text2 a i {margin-right:3px
+	
+}
+.content .auto .tb .text2 a .wd{}
+
+.content .auto .z {
+	border-bottom: 2px solid #000000;
+	height: 25px;
+	margin-top: 30px
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none
+}
+.content .auto .z .zb {
+	float: left;line-height:25px
+}
+.zb ul li {
+	float: left;
+	font-size: 16px;
+	padding: 0px 20px;
+}
+.content .auto .z .zb ul li.sy {
+	border-bottom: 2px solid #FB0206;
+	color: #FB0206
+}
+.content .auto .z .zb ul li:hover {
+	border-bottom: 2px solid #FB0206
+}
+.content .auto .z .yb {
+	float: right;
+	line-height: 25px
+}
+.content .auto .z .yb a {
+	padding: 2px 15px;
+	font-size: 16px;
+}
+.content .auto .z .yb a:hover {
+	border-bottom: 2px solid #FB0206
+}
+.text3 {
+	margin-top: 20px
+}
+.text3 .zb1 {
+	float: left;
+	width: 240px;
+	border: 2px solid #e0dcd7;
+}
+.text3 .zb1 .text1 {
+	position: relative;
+	border-bottom: 1px solid #e0dcd7;height:90px
+}
+.text3 .zb1 .text1 .sm {
+	height: 20px;
+	padding: 8px 20px 0px 25px;
+}
+.text3 .zb1 .text1 .sm .zb {
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+	width: 170px
+}
+.text3 .zb1 .text1 .sm .yb {
+	float: right;
+	margin-right: 7px
+}
+.text3 .zb1 .text1 .xm {
+	padding: 0 20px;
+	height: 58px
+}
+.text3 .zb1 .text1 .xm p {
+	margin: 7px 0px;margin-left:5px
+}
+.text3 .zb1 .text1 .xm p a {
+	color: #000000;
+	font-size: 12px;
+	text-decoration: none
+}
+.text3 .zb1 .text1 .xm p span {
+	padding: 0px 9px
+}
+.text3 .zb1 .text1 .text5 {
+	position: absolute;
+	border: 1px solid #e0dcd7;
+	left: 240px;
+	padding: 13px 20px 0px 20px;
+display:none;
+z-index:3px;width:240px;background:#FFFFFF;height:77px
+
+}
+.text3 .zb1 .text1 .text5 a:hover{color:red}
+.text3 .zb1 .text1 .text5 p a {
+	color: #000000;
+	font-size: 12px;
+	text-decoration: none
+}
+.text3 .zb1 .text1 .text5 p span {
+	padding: 0 12px
+}
+.text3 .zb1 .text1:hover   .text5 {
+	display: block
+}
+.text3 .zb1 .text1 .xm a:hover{color:red}
+.text3 .zb1 .text3 .xm a:hover{color:red}
+.text3 .zb1 .text2 .xm a:hover{color:red}
+.text3 .zb1 .text4 .xm a:hover{color:red}
+
+
+
+.text3 .zb1 .text2 {
+	position: relative;
+	padding: 8px 20px 0px 25px;
+	border-bottom: 1px solid #e0dcd7;height:85px
+}
+.text3 .zb1 .text2 .sm {
+	height: 20px
+}
+.text3 .zb1 .text2 .sm .zb {
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+	width: 170px
+}
+.text3 .zb1 .text2 .sm .yb {
+	float: right;
+	margin-right: 7px
+}
+.text3 .zb1 .text2 .xm {
+}
+.text3 .zb1 .text2 .xm p {
+	margin: 7px 0px;
+}
+.text3 .zb1 .text2 .xm p a {
+	color: #000000;
+	font-size: 12px;
+	text-decoration: none
+}
+.text3 .zb1 .text2 .xm p span {
+	padding: 0px 9px
+}
+.text3 .zb1 .text2 .text6 {
+	position: absolute;
+	border: 1px solid #e0dcd7;
+	top:-2px;
+	left: 240px;
+	padding: 13px 20px 0px 20px;
+display:none;
+z-index:3px;width:240px;background:#FFFFFF;height:77px
+
+}
+.text3 .zb1 .text2 .text6 a:hover{color:red}
+.text3 .zb1 .text2 .text6 p a {
+	color: #000000;
+	font-size: 12px;
+	text-decoration: none
+}
+.text3 .zb1 .text2 .text6 p span {
+	padding: 0 12px
+}
+.text3 .zb1 .text2:hover   .text6 {
+	display: block
+}
+.text3 .zb1 .text3 {
+	position: relative;
+	padding: 8px 20px 0px 25px;
+	border-bottom: 1px solid #e0dcd7;
+	margin: 0px;height:85px
+}
+.text3 .zb1 .text3 .sm {
+	height: 20px;
+}
+.text3 .zb1 .text3 .sm .zb {
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+	width: 170px
+}
+.text3 .zb1 .text3 .sm .yb {
+	float: right;
+	margin-right: 7px
+}
+.text3 .zb1 .text3 .xm {
+}
+.text3 .zb1 .text3 .xm p {
+	margin: 7px 0px;
+}
+.text3 .zb1 .text3 .xm p a {
+	color: #000000;
+	font-size: 12px;
+	text-decoration: none
+}
+.text3 .zb1 .text3 .xm p span {
+	padding: 0px 9px
+}
+.text3 .zb1 .text3 .text7 {
+	position: absolute;
+	border: 1px solid #e0dcd7;
+	top:-25px;
+	left: 240px;
+	padding: 13px 20px 0px 20px;
+display:none;
+z-index:3px;width:240px;background:#FFFFFF;height:77px
+
+}
+.text3 .zb1 .text3 .text7 a:hover{color:red}
+.text3 .zb1 .text3 .text7 p a {
+	color: #000000;
+	font-size: 12px;
+	text-decoration: none
+}
+.text3 .zb1 .text3 .text7 p span {
+	padding: 0 12px
+}
+.text3 .zb1 .text3:hover   .text7 {
+	display: block
+}
+.text3 .zb1 .text4 {
+	position: relative;
+	padding: 8px 20px 0px 25px;height:88px
+}
+.text3 .zb1 .text4 .sm {
+	height: 20px
+}
+.text3 .zb1 .text4 .sm .zb {
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+	width: 170px
+}
+.text3 .zb1 .text4 .sm .yb {
+	float: right;
+	margin-right: 7px
+}
+.text3 .zb1 .text4 .xm {
+}
+.text3 .zb1 .text4 .xm p {
+	margin: 7px 0px
+}
+.text3 .zb1 .text4 .xm p a {
+	color: #000000;
+	font-size: 12px;
+	text-decoration: none
+}
+.text3 .zb1 .text4 .xm p span {
+	padding: 0px 9px
+}
+.text3 .zb1 .text4 .text8 {
+	position: absolute;
+	border: 1px solid #e0dcd7;
+	top:-40px;
+	left: 240px;
+	padding: 13px 20px 0px 20px;
+display:none;
+z-index:3px;width:240px;background:#FFFFFF;height:80px;
+
+}
+.text3 .zb1 .text4 .text8 a:hover{color:red}
+.text3 .zb1 .text4 .text8 p a {
+	color: #000000;
+	font-size: 12px;
+	text-decoration: none
+}
+.text3 .zb1 .text4 .text8 p span {
+	padding: 0 12px
+}
+.text3 .zb1 .text4:hover   .text8 {
+	display: block
+}
+
+.text3 .yb1 {
+	float: right
+}
+.text3 .yb1 .banner {
+}
+.text6 {
+	margin: 0px;
+	padding: 0px;
+	margin-top: 0px
+}
+.text6 .zbtj {
+	font-size: 18px;
+	width: 75px;
+	float: left
+}
+.text6 .xs {
+	float: left;
+	margin-left: 20px;
+	margin-top: 5px;
+	cursor: pointer
+}
+.text6 .xs a {
+	float: left
+}
+.red {
+	color: red
+}
+.text6 .xs span {
+	float: left;
+	margin: 0 15px
+}
+.text7 {
+	margin-top: 23px
+}
+.text7 .text1 {
+	float: left;
+	width: 324px;
+	border: 1px solid #e0dcd7;
+	border-right: none
+}
+.text7 .text1:hover {
+	background: #D4D3D3
+}
+.text7 .text1 .zb2 {
+	float: left;
+	margin: 20px 15px 20px 18px;
+	cursor: pointer
+}
+.text7 .text1 .yb2 {
+	float: right;
+	font-size: 12px;
+	width: 160px;
+	color: #888;
+	margin: 20px 15px 20px 0
+}
+.text7 .text1 .yb2 .xbsg {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-bottom: 10px;
+	cursor: pointer
+}
+.text7 .text1 .yb2 .xbsg:hover {
+	color: red
+}
+.text7 .text1 .yb2 .gjd {
+	margin-bottom: 10px
+}
+.text7 .text1 .yb2 .rg {
+	margin-bottom: 20px
+}
+.text7 .text1 .yb2 .ljyd {
+	color: #4c4c4c;
+	cursor: pointer
+}
+.text7 .text1 .yb2 .ljyd:hover {
+	color: red
+}
+.text7 .text2 {
+	float: left;
+	width: 324px;
+	border: 1px solid #e0dcd7;
+	border-right: none
+}
+.text7 .text2:hover {
+	background: #D4D3D3
+}
+.text7 .text2 .zb2 {
+	float: left;
+	margin: 20px 15px 20px 18px;
+	cursor: pointer
+}
+.text7 .text2 .yb2 {
+	float: right;
+	font-size: 12px;
+	width: 160px;
+	color: #888;
+	margin: 20px 15px 20px 0
+}
+.text7 .text2 .yb2 .xbsg {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-bottom: 10px;
+	cursor: pointer
+}
+.text7 .text2 .yb2 .xbsg:hover {
+	color: red
+}
+.text7 .text2 .yb2 .gjd {
+	margin-bottom: 10px
+}
+.text7 .text2 .yb2 .rg {
+	margin-bottom: 20px
+}
+.text7 .text2 .yb2 .ljyd {
+	color: #4c4c4c;
+	cursor: pointer
+}
+.text7 .text2 .yb2 .ljyd:hover {
+	color: red
+}
+.text7 .text3 {
+	float: left;
+	width: 324px;
+	border: 1px solid #e0dcd7;
+	margin: 0px
+}
+.text7 .text3:hover {
+	background: #D4D3D3
+}
+.text7 .text3 .zb2 {
+	float: left;
+	margin: 20px 15px 20px 18px;
+	cursor: pointer
+}
+.text7 .text3 .yb2 {
+	float: right;
+	font-size: 12px;
+	width: 160px;
+	color: #888;
+	margin: 20px 15px 20px 0
+}
+.text7 .text3 .yb2 .xbsg {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-bottom: 10px;
+	cursor: pointer
+}
+.text7 .text3 .yb2 .xbsg:hover {
+	color: red
+}
+.text7 .text3 .yb2 .gjd {
+	margin-bottom: 10px
+}
+.text7 .text3 .yb2 .rg {
+	margin-bottom: 20px
+}
+.text7 .text3 .yb2 .ljyd {
+	color: #4c4c4c;
+	cursor: pointer
+}
+.text7 .text3 .yb2 .ljyd:hover {
+	color: red
+}
+.text8 {
+	margin-top: 38px;height:400px
+}
+.text8 .left {
+	float: left;
+	width: 700px
+}
+.text8 .left .head {
+}
+.text8 .left .head .gfzww {
+	float: left;
+	font-size: 18px
+}
+.text8 .left .head .gd {
+	float: right;
+	font-size: 13px;
+	color: #888;
+	margin-top: 5px;cursor:pointer
+}
+.text8 .left .head .gd:hover {
+	color: red
+}
+.text8 .left .up {
+	margin-top: 35px;
+}
+.text8 .text1 {
+	float: left;
+	width: 348px;
+	border: 1px solid #e0dcd7
+}
+.text8 .text1:hover {
+	background: #D4D3D3
+}
+.text8 .text1 .zb2 {
+	float: left;
+	margin: 20px 15px 20px 18px;
+	cursor: pointer
+}
+.text8 .text1 .yb2 {
+	float: right;
+	font-size: 12px;
+	width: 160px;
+	color: #888;
+	margin: 20px 15px 20px 0
+}
+.text8 .text1 .yb2 .xbsg {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-bottom: 10px;
+	cursor: pointer
+}
+.text8 .text1 .yb2 .xbsg:hover {
+	color: red
+}
+.text8 .text1 .yb2 .gjd {
+	margin-bottom: 10px
+}
+.text8 .text1 .yb2 .rg {
+	margin-bottom: 20px
+}
+.text8 .text1 .yb2 .ljyd {
+	color: #4c4c4c;
+	cursor: pointer
+}
+.text8 .text1 .yb2 .ljyd:hover {
+	color: red
+}
+.text8 .text2 {
+	float: left;
+	width: 348px;
+	border: 1px solid #e0dcd7;
+	border-left: none
+}
+.text8 .text2:hover {
+	background: #D4D3D3
+}
+.text8 .text2 .zb2 {
+	float: left;
+	margin: 20px 15px 20px 18px;
+	cursor: pointer
+}
+.text8 .text2 .yb2 {
+	float: right;
+	font-size: 12px;
+	width: 160px;
+	color: #888;
+	margin: 20px 15px 20px 0
+}
+.text8 .text2 .yb2 .xbsg {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-bottom: 10px;
+	cursor: pointer
+}
+.text8 .text2 .yb2 .xbsg:hover {
+	color: red
+}
+.text8 .text2 .yb2 .gjd {
+	margin-bottom: 10px
+}
+.text8 .text2 .yb2 .rg {
+	margin-bottom: 20px
+}
+.text8 .text2 .yb2 .ljyd {
+	color: #4c4c4c;
+	cursor: pointer
+}
+.text8 .text2 .yb2 .ljyd:hover {
+	color: red
+}
+.text8 .text3 {
+	float: left;
+	width: 348px;
+	margin: 0px;
+	border: 1px solid #e0dcd7;
+	border-top: none;
+	border-right: none
+}
+.text8 .text3:hover {
+	background: #D4D3D3
+}
+.text8 .text3 .zb2 {
+	float: left;
+	margin: 20px 15px 20px 18px;
+	cursor: pointer
+}
+.text8 .text3 .yb2 {
+	float: right;
+	font-size: 12px;
+	width: 160px;
+	color: #888;
+	margin: 20px 15px 20px 0
+}
+.text8 .text3 .yb2 .xbsg {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-bottom: 10px;
+	cursor: pointer
+}
+.text8 .text3 .yb2 .xbsg:hover {
+	color: red
+}
+.text8 .text3 .yb2 .gjd {
+	margin-bottom: 10px
+}
+.text8 .text3 .yb2 .rg {
+	margin-bottom: 20px
+}
+.text8 .text3 .yb2 .ljyd {
+	color: #4c4c4c;
+	cursor: pointer
+}
+.text8 .text3 .yb2 .ljyd:hover {
+	color: red
+}
+.text8 .text4 {
+	float: left;
+	width: 348px;
+	border: 1px solid #e0dcd7;
+	border-top: none
+}
+.text8 .text4:hover {
+	background: #D4D3D3
+}
+.text8 .text4 .zb2 {
+	float: left;
+	margin: 20px 15px 20px 18px;
+	cursor: pointer
+}
+.text8 .text4 .yb2 {
+	float: right;
+	font-size: 12px;
+	width: 160px;
+	color: #888;
+	margin: 20px 15px 20px 0
+}
+.text8 .text4 .yb2 .xbsg {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-bottom: 10px;
+	cursor: pointer
+}
+.text8 .text4 .yb2 .xbsg:hover {
+	color: red
+}
+.text8 .text4 .yb2 .gjd {
+	margin-bottom: 10px
+}
+.text8 .text4 .yb2 .rg {
+	margin-bottom: 20px
+}
+.text8 .text4 .yb2 .ljyd {
+	color: #4c4c4c;
+	cursor: pointer
+}
+.text8 .text4 .yb2 .ljyd:hover {
+	color: red
+}
+.text8 .right {
+	float: left;
+	margin-left: 19px;
+}
+.text8 .right .head {
+	font-size: 18px;
+}
+.text8 .right .up {
+	border: 1px solid #e0dcd7;
+	margin-top: 11px;
+	width: 255px
+}
+.text8 .right .up ul .a1{width:255px;height:20px}
+.text8 .right .up ul .a1 .b1{position:absolute;top:0px;height:90px;padding:20px 0px 20px 0px;width:253px;display:none;background:#FFFFFF;}
+.text8 .right .up ul .a1 .b1 .left{float:left;width:50px}
+.text8 .right .up ul .a1 .b1 .left i{float:left;font-size:16px;color:red}
+.text8 .right .up ul .a1 .b1  .tp1{float:left;width:70px}
+.text8 .right .up ul .a1 .b1 .right{float:left;width:70px}
+.text8 .right .up ul .a1 .b1 .right a{float:left;font-size:12px;color:#888888}
+.text8 .right .up ul .a1 .b1 .right .c1{font-size:16px;font-weight:bold;color:#000000}
+.text8 .right .up ul .a1:hover{height:100px}
+.text8 .right .up ul .a1:hover  .d1{display:none}
+.text8 .right .up ul .a1:hover .b1{display:block;border-bottom: 1px solid #e0dcd7}
+
+
+.text8 .right .up ul li {
+	border-bottom: 1px solid #e0dcd7;
+	font-size: 14px;
+	padding: 13px 0px;position:relative
+}
+.text8 .right .up ul li i {
+	margin: 0px 19px 0px 22px
+}
+.text8 .right .up ul li.bm {
+	border-bottom: none;cursor:pointer
+}
+.text8 .right .up ul li.bm:hover{color:red}
+.text8 .right .up ul .a2{width:255px;height:20px}
+.text8 .right .up ul .a2 .b1{position:absolute;top:0px;height:90px;padding:20px 0px 20px 0px;width:253px;display:none;background:#FFFFFF;}
+.text8 .right .up ul .a2 .b1 .left{float:left;width:50px}
+.text8 .right .up ul .a2 .b1 .left i{float:left;font-size:16px;color:red}
+.text8 .right .up ul .a2 .b1  .tp1{float:left;width:70px}
+.text8 .right .up ul .a2 .b1 .right{float:left;width:70px}
+.text8 .right .up ul .a2 .b1 .right a{float:left;font-size:12px;color:#888888}
+.text8 .right .up ul .a2 .b1 .right .c1{font-size:16px;font-weight:bold;color:#000000}
+.text8 .right .up ul .a2:hover{height:102px}
+.text8 .right .up ul .a2:hover  .d1{display:none}
+.text8 .right .up ul .a2:hover .b1{display:block;border-bottom: 1px solid #e0dcd7}
+.text8 .right .up ul .a3{width:255px;height:20px}
+.text8 .right .up ul .a3 .b1{position:absolute;top:0px;height:90px;padding:20px 0px 20px 0px;width:253px;display:none;background:#FFFFFF;}
+.text8 .right .up ul .a3 .b1 .left{float:left;width:50px}
+.text8 .right .up ul .a3 .b1 .left i{float:left;font-size:16px;color:red}
+.text8 .right .up ul .a3 .b1  .tp1{float:left;width:70px}
+.text8 .right .up ul .a3 .b1 .right{float:left;width:70px}
+.text8 .right .up ul .a3 .b1 .right a{float:left;font-size:12px;color:#888888}
+.text8 .right .up ul .a3 .b1 .right .c1{font-size:16px;font-weight:bold;color:#000000}
+.text8 .right .up ul .a3:hover{height:102px}
+.text8 .right .up ul .a3:hover  .d1{display:none}
+.text8 .right .up ul .a3:hover .b1{display:block;border-bottom: 1px solid #e0dcd7}
+.text8 .right .up ul .a4{width:255px;height:20px}
+.text8 .right .up ul .a4 .b1{position:absolute;top:0px;height:90px;padding:20px 0px 20px 0px;width:253px;display:none;background:#FFFFFF;}
+.text8 .right .up ul .a4 .b1 .left{float:left;width:50px}
+.text8 .right .up ul .a4 .b1 .left i{float:left;font-size:16px;color:red}
+.text8 .right .up ul .a4 .b1  .tp1{float:left;width:70px}
+.text8 .right .up ul .a4 .b1 .right{float:left;width:70px}
+.text8 .right .up ul .a4 .b1 .right a{float:left;font-size:12px;color:#888888}
+.text8 .right .up ul .a4 .b1 .right .c1{font-size:16px;font-weight:bold;color:#000000}
+.text8 .right .up ul .a4:hover{height:102px}
+.text8 .right .up ul .a4:hover  .d1{display:none}
+.text8 .right .up ul .a4:hover .b1{display:block;border-bottom: 1px solid #e0dcd7}
+.text8 .right .up ul .a5{width:255px;height:20px}
+.text8 .right .up ul .a5 .b1{position:absolute;top:0px;height:90px;padding:20px 0px 20px 0px;width:253px;display:none;background:#FFFFFF;}
+.text8 .right .up ul .a5 .b1 .left{float:left;width:50px}
+.text8 .right .up ul .a5 .b1 .left i{float:left;font-size:16px;color:red}
+.text8 .right .up ul .a5 .b1  .tp1{float:left;width:70px}
+.text8 .right .up ul .a5 .b1 .right{float:left;width:70px}
+.text8 .right .up ul .a5 .b1 .right a{float:left;font-size:12px;color:#888888}
+.text8 .right .up ul .a5 .b1 .right .c1{font-size:16px;font-weight:bold;color:#000000}
+.text8 .right .up ul .a5:hover{height:102px}
+.text8 .right .up ul .a5:hover  .d1{display:none}
+.text8 .right .up ul .a5:hover .b1{display:block;border-bottom: 1px solid #e0dcd7}
+.text8 .right .up ul .a6{width:255px;height:20px}
+.text8 .right .up ul .a6 .b1{position:absolute;top:0px;height:90px;padding:20px 0px 20px 0px;width:253px;display:none;background:#FFFFFF;}
+.text8 .right .up ul .a6 .b1 .left{float:left;width:50px}
+.text8 .right .up ul .a6 .b1 .left i{float:left;font-size:16px;color:red}
+.text8 .right .up ul .a6 .b1  .tp1{float:left;width:70px}
+.text8 .right .up ul .a6 .b1 .right{float:left;width:70px}
+.text8 .right .up ul .a6 .b1 .right a{float:left;font-size:12px;color:#888888}
+.text8 .right .up ul .a6 .b1 .right .c1{font-size:16px;font-weight:bold;color:#000000}
+.text8 .right .up ul .a6:hover{height:102px}
+.text8 .right .up ul .a6:hover  .d1{display:none}
+.text8 .right .up ul .a6:hover .b1{display:block;border-bottom: 1px solid #e0dcd7}
+
+
+
+
+
+
+.text9 {margin:0px;padding:0px;
+	margin-top: 100px;
+}
+.text9 .up {
+}
+.text9 .up .left {
+	width:300px;
+	float: left;
+	font-size: 18px;
+}
+.text9 .up .right {
+	float: right;
+	font-size: 13px;
+	color: #888;
+	margin-top: 5px;cursor:pointer
+}
+.text9 .up .right:hover{color:red}
+.text9 .down {
+	margin-top: 25px;
+	float: left
+}
+.text9 .down .text1:hover {
+	background: #D4D3D3
+}
+.text9 .down .text1 {
+	border: 1px solid #e0dcd7;
+	width: 325px;
+	margin: 0px;
+	padding: 0px;
+	padding: 25px 0px 25px 25px;
+	float: left
+}
+.text9 .down .text1 i {
+}
+.text9 .down .text1 span {
+	font-size: 16px;
+	font-weight: bold;
+	color: #4c4c4c
+}
+.text9 .down .text1 a {
+	color: #888;
+	font-size: 12px
+}
+.text9 .down .text1 .ht {
+	margin-top: 31px;
+}
+.text9 .down .text1 .ht a{float:left;cursor:pointer}
+.text9 .down .text1 .ht .tp1{background: url(images/images/432_03.jpg) no-repeat;width:16px;height:16px}
+.text9 .down .text1 .ht .tp2{background: url(images/images/234_05.jpg) no-repeat;width:16px;height:16px;margin-left:10px;margin-top:2px}
+.text9 .down .text2:hover {
+	background: #D4D3D3
+}
+.text9 .down .text2 {
+	border: 1px solid #e0dcd7;
+	width: 325px;
+	margin: 0px;
+	padding: 0px;
+	padding: 25px 0px 25px 25px;
+	float: left;
+	border-left: none
+}
+.text9 .down .text2 i {
+}
+.text9 .down .text2 span {
+	font-size: 16px;
+	font-weight: bold;
+	color: #4c4c4c
+}
+.text9 .down .text2 a {
+	color: #888;
+	font-size: 12px
+}
+.text9 .down .text2 .ht {
+	margin-top: 31px;
+}
+.text9 .down .text2 .ht a{float:left;cursor:pointer}
+.text9 .down .text2 .ht .tp1{background: url(images/images/432_03.jpg) no-repeat;width:16px;height:16px}
+.text9 .down .text2 .ht .tp2{background: url(images/images/234_05.jpg) no-repeat;width:16px;height:16px;margin-left:10px;margin-top:2px}
+.text9 .down .text3 {
+	float: left;
+	border: 1px solid #e0dcd7;
+	margin: 0px;
+	border-left: none
+}
+.text9 .down .text3 .wxnl1 {
+	width: 250px;
+	padding: 16px 0px 16px 18px;
+	font-size: 12px;
+	color: #888;
+	border-bottom: 1px solid #e0dcd7;height:36px
+}
+.text9 .down .text3 .wxnl1:hover {
+	background: #D4D3D3
+}
+.text9 .down .text3 .wxnl1 i {
+	margin-right: 3px
+}
+.text9 .down .text3 .wxnl1 .wx {
+	color: #655;
+	cursor: pointer;
+	font-size: 14px;
+}
+.text9 .down .text3 .wxnl1 .wx:hover {
+	color: red
+}
+.text9 .down .text3 .wxnl1 .sbs {
+	margin-left: 9px
+}
+.text9 .down .text3 .wxnl2 {
+	width: 250px;
+	padding: 16px 0px 16px 18px;
+	font-size: 12px;
+	color: #888;
+	border-bottom: 1px solid #e0dcd7;height:36px
+}
+.text9 .down .text3 .wxnl2:hover {
+	background: #D4D3D3
+}
+.text9 .down .text3 .wxnl2 i {
+	margin-right: 3px
+}
+.text9 .down .text3 .wxnl2 .wx {
+	color: #655;
+	cursor: pointer;
+	font-size: 14px;
+}
+.text9 .down .text3 .wxnl2 .wx:hover {
+	color: red
+}
+.text9 .down .text3 .wxnl2 .sbs {
+	margin-left: 9px
+}
+.text9 .down .text3 .wxnl3 {
+	width: 250px;
+	padding: 16px 0px 16px 18px;
+	font-size: 12px;
+	color: #888;
+	border-bottom: 1px solid #e0dcd7;height:36px
+}
+.text9 .down .text3 .wxnl3:hover {
+	background: #D4D3D3
+}
+.text9 .down .text3 .wxnl3 i {
+	margin-right: 3px
+}
+.text9 .down .text3 .wxnl3 .wx {
+	color: #655;
+	cursor: pointer;
+	font-size: 14px;
+}
+.text9 .down .text3 .wxnl3 .wx:hover {
+	color: red
+}
+.text9 .down .text3 .wxnl3 .sbs {
+	margin-left: 9px
+}
+.text9 .down .text3 .wxnl4 {
+	width: 250px;
+	padding: 16px 0px 16px 18px;
+	font-size: 12px;
+	color: #888;
+	border-bottom: 1px solid #e0dcd7;height:36px
+}
+.text9 .down .text3 .wxnl4:hover {
+	background: #D4D3D3
+}
+.text9 .down .text3 .wxnl4 i {
+	margin-right: 3px
+}
+.text9 .down .text3 .wxnl4 .wx {
+	color: #655;
+	cursor: pointer;
+	font-size: 14px;
+}
+.text9 .down .text3 .wxnl4 .wx:hover {
+	color: red
+}
+.text9 .down .text3 .wxnl4 .sbs {
+	margin-left: 9px
+}
+.text9 .down .text3 .wxnl5 {
+	width: 250px;
+	padding: 15px 0px 15px 18px;
+	font-size: 12px;
+	color: #888;height:38px
+}
+.text9 .down .text3 .wxnl5:hover {
+	background: #D4D3D3
+}
+.text9 .down .text3 .wxnl5 i {
+	margin-right: 3px
+}
+.text9 .down .text3 .wxnl5 .wx {
+	color: #655;
+	cursor: pointer;
+	font-size: 14px;
+}
+.text9 .down .text3 .wxnl5 .wx:hover {
+	color: red
+}
+.text9 .down .text3 .wxnl5 .sbs {
+	margin-left: 9px
+}
+.text10 {
+}
+.text10 .zb {
+	width: 700px;
+	float: left;
+	margin-top: 50px;height:550px
+}
+.text10 .zb .up {
+}
+.text10 .zb .up .yzmh {
+	float: left;
+	font-size: 18px
+}
+.text10 .zb .up .gd {
+	float: right;
+	font-size: 13px;
+	color: #888888;
+	margin-top: 3px;cursor:pointer
+}
+.text10 .zb .up .gd:hover{color:red}
+.text10 .zb .down {
+	border: 1px solid #e0dcd7;
+	margin-top: 45px;
+	padding: 20px;
+	height: 450px
+}
+.text10 .zb .down .text1 {
+	float: left;
+	width: 120px;
+	margin-right: 13px
+}
+
+.text10 .zb .down .text1 .la {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-top: 10px;
+	cursor: pointer
+}
+.text10 .zb .down .text1 .la:hover {
+	color: red;
+}
+.text10 .zb .down .text1 .xj {
+	font-size: 12px;
+	color: #888888;
+	margin-top: 10px
+}
+.text10 .zb .down .text2 {
+	float: left;
+	width: 120px;
+	margin-right: 13px
+}
+.text10 .zb .down .text2 .la {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-top: 10px;
+	cursor: pointer
+}
+.text10 .zb .down .text2 .la:hover {
+	color: red;
+}
+.text10 .zb .down .text2 .xj {
+	font-size: 12px;
+	color: #888888;
+	margin-top: 10px
+}
+.text10 .zb .down .text3 {
+	float: left;
+	width: 120px;
+	margin: 0px;
+	margin-right: 13px
+}
+.text10 .zb .down .text3 .la {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-top: 10px;
+	cursor: pointer
+}
+.text10 .zb .down .text3 .la:hover {
+	color: red;
+}
+.text10 .zb .down .text3 .xj {
+	font-size: 12px;
+	color: #888888;
+	margin-top: 10px
+}
+.text10 .zb .down .text4 {
+	float: left;
+	width: 120px;
+	margin-right: 13px
+}
+.text10 .zb .down .text4 .la {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-top: 10px;
+	cursor: pointer
+}
+.text10 .zb .down .text4 .la:hover {
+	color: red;
+}
+.text10 .zb .down .text4 .xj {
+	font-size: 12px;
+	color: #888888;
+	margin-top: 10px
+}
+.text10 .zb .down .text5 {
+	float: left;
+	width: 120px;
+}
+.text10 .zb .down .text5 .la {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-top: 10px;
+	cursor: pointer
+}
+.text10 .zb .down .text5 .la:hover {
+	color: red;
+}
+.text10 .zb .down .text5 .xj {
+	font-size: 12px;
+	color: #888888;
+	margin-top: 10px
+}
+.text10 .zb .down .text6 {
+	float: left;
+	width: 120px;
+	margin: 0px;
+	margin-top: 16px;
+	margin-right: 13px
+}
+.text10 .zb .down .text6 .la {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-top: 10px;
+	cursor: pointer
+}
+.text10 .zb .down .text6 .la:hover {
+	color: red;
+}
+.text10 .zb .down .text6 .xj {
+	font-size: 12px;
+	color: #888888;
+	margin-top: 10px
+}
+.text10 .zb .down .text7 {
+	float: left;
+	width: 120px;
+	margin: 0px;
+	margin-top: 16px;
+	margin-right: 13px
+}
+.text10 .zb .down .text7 .la {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-top: 10px;
+	cursor: pointer
+}
+.text10 .zb .down .text7 .la:hover {
+	color: red;
+}
+.text10 .zb .down .text7 .xj {
+	font-size: 12px;
+	color: #888888;
+	margin-top: 10px
+}
+.text10 .zb .down .text8 {
+	float: left;
+	width: 120px;
+	margin: 0px;
+	margin-top: 16px;
+	margin-right: 13px
+}
+.text10 .zb .down .text8 .la {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-top: 10px;
+	cursor: pointer
+}
+.text10 .zb .down .text8 .la:hover {
+	color: red;
+}
+.text10 .zb .down .text8 .xj {
+	font-size: 12px;
+	color: #888888;
+	margin-top: 10px
+}
+.text10 .zb .down .text9 {
+	float: left;
+	width: 120px;
+	margin: 0px;
+	margin-top: 16px;
+	margin-right: 13px
+}
+.text10 .zb .down .text9 .la {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-top: 10px;
+	cursor: pointer
+}
+.text10 .zb .down .text9 .la:hover {
+	color: red;
+}
+.text10 .zb .down .text9 .xj {
+	font-size: 12px;
+	color: #888888;
+	margin-top: 10px
+}
+.text10 .zb .down .text10 {
+	float: left;
+	width: 120px;
+	margin: 0px;
+	margin-top: 16px
+}
+.text10 .zb .down .text10 .la {
+	font-size: 16px;
+	color: #4c4c4c;
+	margin-top: 10px;
+	cursor: pointer
+}
+.text10 .zb .down .text10 .la:hover {
+	color: red;
+}
+.text10 .zb .down .text10 .xj {
+	font-size: 12px;
+	color: #888888;
+	margin-top: 10px
+}
+.text10 .yb {
+	float: left;
+	margin-left: 19px;
+	margin-top: 50px
+}
+.text10 .yb .head {
+	font-size: 18px;
+}
+.text10 .yb .up {
+	border: 1px solid #e0dcd7;
+	margin-top: 20px;
+	width: 255px
+}
+.text10 .yb .up ul li {
+	border-bottom: 1px solid #e0dcd7;
+	font-size: 14px;
+	padding: 10px 0px;position:relative
+}
+.text10 .yb .up ul li i {
+	margin: 0px 19px 0px 22px
+}
+.text10 .yb .up ul li.bm {
+	border-bottom: none;cursor:pointer
+}
+.text10 .yb .up ul li.bm:hover{color:red}
+.text10 .yb .up ul .a1{width:255px;height:20px}
+.text10 .yb .up ul .a1 .b1{position:absolute;top:0px;height:90px;padding:20px 0px 20px 0px;width:253px;display:none;background:#FFFFFF;}
+.text10 .yb .up ul .a1 .b1 .left{float:left;width:50px}
+.text10 .yb .up ul .a1 .b1 .left i{float:left;font-size:16px;color:red}
+.text10 .yb .up ul .a1 .b1  .tp1{float:left;width:70px}
+.text10 .yb .up ul .a1 .b1 .right{float:left;width:70px}
+.text10 .yb .up ul .a1 .b1 .right a{float:left;font-size:12px;color:#888888;margin-left:10px}
+.text10 .yb .up ul .a1 .b1 .right .c1{font-size:16px;font-weight:bold;color:#000000}
+.text10 .yb .up ul .a1:hover{height:100px}
+.text10 .yb .up ul .a1:hover  .d1{display:none}
+.text10 .yb .up ul .a1:hover .b1{display:block;border-bottom: 1px solid #e0dcd7}
+.text10 .yb .up ul .a2{width:255px;height:20px}
+.text10 .yb .up ul .a2 .b1{position:absolute;top:0px;height:90px;padding:20px 0px 20px 0px;width:253px;display:none;background:#FFFFFF;}
+.text10 .yb .up ul .a2 .b1 .left{float:left;width:50px}
+.text10 .yb .up ul .a2 .b1 .left i{float:left;font-size:16px;color:red}
+.text10 .yb .up ul .a2 .b1  .tp1{float:left;width:70px}
+.text10 .yb .up ul .a2 .b1 .right{float:left;width:70px}
+.text10 .yb .up ul .a2 .b1 .right a{float:left;font-size:12px;color:#888888;margin-left:10px}
+.text10 .yb .up ul .a2 .b1 .right .c1{font-size:16px;font-weight:bold;color:#000000}
+.text10 .yb .up ul .a2:hover{height:100px}
+.text10 .yb .up ul .a2:hover  .d1{display:none}
+.text10 .yb .up ul .a2:hover .b1{display:block;border-bottom: 1px solid #e0dcd7}
+.text10 .yb .up ul .a3{width:255px;height:20px}
+.text10 .yb .up ul .a3 .b1{position:absolute;top:0px;height:90px;padding:20px 0px 20px 0px;width:253px;display:none;background:#FFFFFF;}
+.text10 .yb .up ul .a3 .b1 .left{float:left;width:50px}
+.text10 .yb .up ul .a3 .b1 .left i{float:left;font-size:16px;color:red}
+.text10 .yb .up ul .a3 .b1  .tp1{float:left;width:70px}
+.text10 .yb .up ul .a3 .b1 .right{float:left;width:70px}
+.text10 .yb .up ul .a3 .b1 .right a{float:left;font-size:12px;color:#888888;margin-left:10px}
+.text10 .yb .up ul .a3 .b1 .right .c1{font-size:16px;font-weight:bold;color:#000000}
+.text10 .yb .up ul .a3:hover{height:100px}
+.text10 .yb .up ul .a3:hover  .d1{display:none}
+.text10 .yb .up ul .a3:hover .b1{display:block;border-bottom: 1px solid #e0dcd7}
+.text10 .yb .up ul .a4{width:255px;height:20px}
+.text10 .yb .up ul .a4 .b1{position:absolute;top:0px;height:90px;padding:20px 0px 20px 0px;width:253px;display:none;background:#FFFFFF;}
+.text10 .yb .up ul .a4 .b1 .left{float:left;width:50px}
+.text10 .yb .up ul .a4 .b1 .left i{float:left;font-size:16px;color:red}
+.text10 .yb .up ul .a4 .b1  .tp1{float:left;width:70px}
+.text10 .yb .up ul .a4 .b1 .right{float:left;width:70px}
+.text10 .yb .up ul .a4 .b1 .right a{float:left;font-size:12px;color:#888888;margin-left:10px}
+.text10 .yb .up ul .a4 .b1 .right .c1{font-size:16px;font-weight:bold;color:#000000}
+.text10 .yb .up ul .a4:hover{height:100px}
+.text10 .yb .up ul .a4:hover  .d1{display:none}
+.text10 .yb .up ul .a4:hover .b1{display:block;border-bottom: 1px solid #e0dcd7}
+.text10 .yb .up ul .a5{width:255px;height:20px}
+.text10 .yb .up ul .a5 .b1{position:absolute;top:0px;height:90px;padding:20px 0px 20px 0px;width:253px;display:none;background:#FFFFFF;}
+.text10 .yb .up ul .a5 .b1 .left{float:left;width:50px}
+.text10 .yb .up ul .a5 .b1 .left i{float:left;font-size:16px;color:red}
+.text10 .yb .up ul .a5 .b1  .tp1{float:left;width:70px}
+.text10 .yb .up ul .a5 .b1 .right{float:left;width:70px}
+.text10 .yb .up ul .a5 .b1 .right a{float:left;font-size:12px;color:#888888;margin-left:10px}
+.text10 .yb .up ul .a5 .b1 .right .c1{font-size:16px;font-weight:bold;color:#000000}
+.text10 .yb .up ul .a5:hover{height:100px}
+.text10 .yb .up ul .a5:hover  .d1{display:none}
+.text10 .yb .up ul .a5:hover .b1{display:block;border-bottom: 1px solid #e0dcd7}
+.text10 .yb .up ul .a6{width:255px;height:20px}
+.text10 .yb .up ul .a6 .b1{position:absolute;top:0px;height:90px;padding:20px 0px 20px 0px;width:253px;display:none;background:#FFFFFF;}
+.text10 .yb .up ul .a6 .b1 .left{float:left;width:50px}
+.text10 .yb .up ul .a6 .b1 .left i{float:left;font-size:16px;color:red}
+.text10 .yb .up ul .a6 .b1  .tp1{float:left;width:70px}
+.text10 .yb .up ul .a6 .b1 .right{float:left;width:70px}
+.text10 .yb .up ul .a6 .b1 .right a{float:left;font-size:12px;color:#888888;margin-left:10px}
+.text10 .yb .up ul .a6 .b1 .right .c1{font-size:16px;font-weight:bold;color:#000000}
+.text10 .yb .up ul .a6:hover{height:100px}
+.text10 .yb .up ul .a6:hover  .d1{display:none}
+.text10 .yb .up ul .a6:hover .b1{display:block;border-bottom: 1px solid #e0dcd7}
+.text10 .yb .up ul .a7{width:255px;height:20px}
+.text10 .yb .up ul .a7 .b1{position:absolute;top:0px;height:90px;padding:20px 0px 20px 0px;width:253px;display:none;background:#FFFFFF;}
+.text10 .yb .up ul .a7 .b1 .left{float:left;width:50px}
+.text10 .yb .up ul .a7 .b1 .left i{float:left;font-size:16px;color:red}
+.text10 .yb .up ul .a7 .b1  .tp1{float:left;width:70px}
+.text10 .yb .up ul .a7 .b1 .right{float:left;width:70px}
+.text10 .yb .up ul .a7 .b1 .right a{float:left;font-size:12px;color:#888888;margin-left:10px}
+.text10 .yb .up ul .a7 .b1 .right .c1{font-size:16px;font-weight:bold;color:#000000}
+.text10 .yb .up ul .a7:hover{height:100px}
+.text10 .yb .up ul .a7:hover  .d1{display:none}
+.text10 .yb .up ul .a7:hover .b1{display:block;border-bottom: 1px solid #e0dcd7}
+.text10 .yb .up ul .a8{width:255px;height:20px}
+.text10 .yb .up ul .a8 .b1{position:absolute;top:0px;height:90px;padding:20px 0px 20px 0px;width:253px;display:none;background:#FFFFFF;}
+.text10 .yb .up ul .a8 .b1 .left{float:left;width:50px}
+.text10 .yb .up ul .a8 .b1 .left i{float:left;font-size:16px;color:red}
+.text10 .yb .up ul .a8 .b1  .tp1{float:left;width:70px}
+.text10 .yb .up ul .a8 .b1 .right{float:left;width:70px}
+.text10 .yb .up ul .a8 .b1 .right a{float:left;font-size:12px;color:#888888;margin-left:10px}
+.text10 .yb .up ul .a8 .b1 .right .c1{font-size:16px;font-weight:bold;color:#000000}
+.text10 .yb .up ul .a8:hover{height:100px}
+.text10 .yb .up ul .a8:hover  .d1{display:none}
+.text10 .yb .up ul .a8:hover .b1{display:block;border-bottom: 1px solid #e0dcd7}
+.text10 .yb .up ul .a9{width:255px;height:20px}
+.text10 .yb .up ul .a9 .b1{position:absolute;top:0px;height:90px;padding:20px 0px 20px 0px;width:253px;display:none;background:#FFFFFF;}
+.text10 .yb .up ul .a9 .b1 .left{float:left;width:50px}
+.text10 .yb .up ul .a9 .b1 .left i{float:left;font-size:16px;color:red}
+.text10 .yb .up ul .a9 .b1  .tp1{float:left;width:70px}
+.text10 .yb .up ul .a9 .b1 .right{float:left;width:70px}
+.text10 .yb .up ul .a9 .b1 .right a{float:left;font-size:12px;color:#888888;margin-left:10px}
+.text10 .yb .up ul .a9 .b1 .right .c1{font-size:16px;font-weight:bold;color:#000000}
+.text10 .yb .up ul .a9:hover{height:100px}
+.text10 .yb .up ul .a9:hover  .d1{display:none}
+.text10 .yb .up ul .a9:hover .b1{display:block;border-bottom: 1px solid #e0dcd7}
+
+.text11 {
+	margin-top: 50px
+}
+.text11 .up {
+	font-size: 18px;
+}
+.text11 .down {
+	margin-top: 20px
+}
+.text11 .down .text1 {
+	width: 243px;
+	border: 1px solid #e0dcd7;
+	height: 200px;
+	float: left;
+	border-right: none
+}
+.text11 .down .text1 .left {
+	float: left;
+	margin-top: 20px;
+	margin-left: 16px
+}
+.text11 .down .text1 .right {
+	float: left;
+	margin-top: 20px;
+	margin-left: 16px
+}
+.text11 .down .text1 .right .t1 {
+	font-size: 16px;
+	color: #4c4c4c;
+	font-weight: bold
+}
+.text11 .down .text1 .right .t2 {
+	font-size: 12px;
+	color: #655;
+}
+.text11 .down .text1 .right .t3 {
+	font-size: 12px;
+	color: #888;float:left;margin-top:5px
+}
+.text11 .down .text1 .right  .tp1{background: url(images/1234_08.jpg) no-repeat;width:18px;height:30px;float:left;margin-top:5px;cursor:pointer}
+.text11 .down .text1 .right  .tp1:hover{background:url(images/1234_12.jpg) no-repeat}
+.text11 .down .text1 .right  .tp2{background: url(images/1234_04.jpg) no-repeat;width:18px;height:30px;float:left;margin-top:5px;cursor:pointer}
+.text11 .down .text1 .right  .tp2:hover{background: url(images/images/124_03.jpg) no-repeat 0px 1px}
+.text11 .down .text1 .right  .tp3{background: url(images/1234_03.jpg) no-repeat;width:30px;height:30px;float:left;margin-top:5px;cursor:pointer}
+.text11 .down .text1 .right  .tp3:hover{background: url(images/images/124_08.jpg) no-repeat 1px 1px}
+
+
+.text11 .down .text1 .right .t4 {
+	margin-top: 72px;
+	border: 1px solid #c9483c;
+	text-align: center;
+	height: 22px;
+	width: 74px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #c9483c
+}
+.text11 .down .text1 .right .t3 .div {
+	cursor: pointer
+}
+.text11 .down .text2 {
+	width: 243px;
+	border: 1px solid #e0dcd7;
+	height: 200px;
+	float: left;
+	border-right: none
+}
+.text11 .down .text2 .left {
+	float: left;
+	margin-top: 20px;
+	margin-left: 16px
+}
+.text11 .down .text2 .right {
+	float: left;
+	margin-top: 20px;
+	margin-left: 16px
+}
+.text11 .down .text2 .right .t1 {
+	font-size: 16px;
+	color: #4c4c4c;
+	font-weight: bold
+}
+.text11 .down .text2 .right .t2 {
+	font-size: 12px;
+	color: #655;
+}
+.text11 .down .text2 .right .t3 {
+	font-size: 12px;
+	color: #888;
+}
+.text11 .down .text2 .right .t4 {
+	margin-top: 72px;
+	border: 1px solid #c9483c;
+	text-align: center;
+	height: 22px;
+	width: 74px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #c9483c
+}
+.text11 .down .text2 .right i {
+	cursor: pointer
+}
+.text11 .down .text3 {
+	width: 243px;
+	border: 1px solid #e0dcd7;
+	height: 200px;
+	float: left;
+	margin: 0px;
+	border-right: none
+}
+.text11 .down .text3 .left {
+	float: left;
+	margin-top: 20px;
+	margin-left: 16px
+}
+.text11 .down .text3 .right {
+	float: left;
+	margin-top: 20px;
+	margin-left: 16px
+}
+.text11 .down .text3 .right .t1 {
+	font-size: 16px;
+	color: #4c4c4c;
+	font-weight: bold
+}
+.text11 .down .text3 .right .t2 {
+	font-size: 12px;
+	color: #655;
+}
+.text11 .down .text3 .right .t3 {
+	font-size: 12px;
+	color: #888;
+}
+.text11 .down .text3 .right .t4 {
+	margin-top: 10px;
+	border: 1px solid #c9483c;
+	text-align: center;
+	height: 22px;
+	width: 74px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #c9483c
+}
+.text11 .down .text3 .right i {
+	cursor: pointer
+}
+.text11 .down .text4 {
+	width: 243px;
+	border: 1px solid #e0dcd7;
+	height: 200px;
+	float: left;
+	margin: 0px;
+border
+}
+.text11 .down .text4 .left {
+	float: left;
+	margin-top: 20px;
+	margin-left: 16px
+}
+.text11 .down .text4 .right {
+	float: left;
+	margin-top: 20px;
+	margin-left: 16px
+}
+.text11 .down .text4 .right .t1 {
+	font-size: 16px;
+	color: #4c4c4c;
+	font-weight: bold
+}
+.text11 .down .text4 .right .t2 {
+	font-size: 12px;
+	color: #655;
+}
+.text11 .down .text4 .right .t3 {
+	font-size: 12px;
+	color: #888;
+}
+.text11 .down .text4 .right .t4 {
+	margin-top: 10px;
+	border: 1px solid #c9483c;
+	text-align: center;
+	height: 22px;
+	width: 74px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #c9483c
+}
+.text11 .down .text4 .right i {
+	cursor: pointer
+}
+.text12 {
+	margin-top: 50px;
+	width: 100%;
+	background: #F4F1F1;
+	border-bottom: 1px solid #e0dcd7;
+	height: 237px
+}
+.text12 .up {
+	padding-bottom: 60px;
+}
+.text12 .up .text1 {
+	width: 135px;
+	float: left;
+	margin-top: 42px;
+	font-size: 12px;
+	color: #888888;
+	height: 140px;
+	border-right: 1px solid #e0dcd7;
+}
+.text12 .up .text1 .a1 {
+	color: #655;
+	font-size: 16px
+}
+.text12 .up .text1 .a2 {
+	margin-top: 10px;width:50px;float:left;cursor:pointer
+}
+.text12 .up .text1 .a2:hover {
+	color: red
+}
+.text12 .up .text1 .a3 {
+	margin-top: 10px;width:50px;float:left;margin-left:10px;cursor:pointer
+}
+.text12 .up .text1 .a3:hover {
+	color: red
+}
+.text12 .up .text1 .a4 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text1 .a4:hover {
+	color: red
+}
+.text12 .up .text1 .a5 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text1 .a5:hover {
+	color: red
+}
+.text12 .up .text1 .a6 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text1 .a6:hover {
+	color: red
+}
+.text12 .up .text1 .a7 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text1 .a7:hover {
+	color: red
+}
+.text12 .up .text1 .a8 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text1 .a8:hover {
+	color: red
+}
+.text12 .up .text1 .a9 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text1 .a9:hover {
+	color: red
+}
+.text12 .up .text2 {
+	width: 135px;
+	float: left;
+	margin-top: 42px;
+	font-size: 12px;
+	color: #888888;
+	height: 140px;
+	border-right: 1px solid #e0dcd7;
+	padding-left: 30px
+}
+.text12 .up .text2 .a1 {
+	color: #655;
+	font-size: 16px
+}
+.text12 .up .text2 .a2 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text2 .a2:hover {
+	color: red
+}
+.text12 .up .text2 .a3 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text2 .a3:hover {
+	color: red
+}
+.text12 .up .text2 .a4 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text2 .a4:hover {
+	color: red
+}
+.text12 .up .text2 .a5 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text2 .a5:hover {
+	color: red
+}
+.text12 .up .text2 .a6 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text2 .a6:hover {
+	color: red
+}
+.text12 .up .text2 .a7 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text2 .a7:hover {
+	color: red
+}
+.text12 .up .text2 .a8 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text2 .a8:hover {
+	color: red
+}
+.text12 .up .text2 .a9 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text2 .a9:hover {
+	color: red
+}
+.text12 .up .text3 {
+	width: 135px;
+	float: left;
+	margin-top: 42px;
+	font-size: 12px;
+	color: #888888;
+	height: 140px;
+	border-right: 1px solid #e0dcd7;
+	padding-left: 30px
+}
+.text12 .up .text3 .a1 {
+	color: #655;
+	font-size: 16px
+}
+.text12 .up .text3 .a2 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text3 .a2:hover {
+	color: red
+}
+.text12 .up .text3 .a3 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text3 .a3:hover {
+	color: red
+}
+.text12 .up .text3 .a4 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text3 .a4:hover {
+	color: red
+}
+.text12 .up .text3 .a5 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text3 .a5:hover {
+	color: red
+}
+.text12 .up .text3 .a6 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text3 .a6:hover {
+	color: red
+}
+.text12 .up .text3 .a7 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text3 .a7:hover {
+	color: red
+}
+.text12 .up .text3 .a8 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text3 .a8:hover {
+	color: red
+}
+.text12 .up .text3 .a9 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text3 .a9:hover {
+	color: red
+}
+.text12 .up .text4 {
+	width: 135px;
+	float: left;
+	margin-top: 42px;
+	font-size: 12px;
+	color: #888888;
+	height: 140px;
+	border-right: 1px solid #e0dcd7;
+	padding-left: 30px
+}
+.text12 .up .text4 .a1 {
+	color: #655;
+	font-size: 16px
+}
+.text12 .up .text4 .a2 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text4 .a2:hover {
+	color: red
+}
+.text12 .up .text4 .a3 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text4 .a3:hover {
+	color: red
+}
+.text12 .up .text4 .a4 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text4 .a4:hover {
+	color: red
+}
+.text12 .up .text4 .a5 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text4 .a5:hover {
+	color: red
+}
+.text12 .up .text4 .a6 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text4 .a6:hover {
+	color: red
+}
+.text12 .up .text4 .a7 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text4 .a7:hover {
+	color: red
+}
+.text12 .up .text4 .a8 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text4 .a8:hover {
+	color: red
+}
+.text12 .up .text4 .a9 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text4 .a9:hover {
+	color: red
+}
+.text12 .up .text5 {
+	width: 135px;
+	float: left;
+	margin-top: 42px;
+	font-size: 12px;
+	color: #888888;
+	height: 140px;
+	border-right: 1px solid #e0dcd7;
+	padding-left: 30px
+}
+.text12 .up .text5 .a1 {
+	color: #655;
+	font-size: 16px
+}
+.text12 .up .text5 .a2 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text5 .a2:hover {
+	color: red
+}
+.text12 .up .text5 .a3 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text5 .a3:hover {
+	color: red
+}
+.text12 .up .text5 .a4 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text5 .a4:hover {
+	color: red
+}
+.text12 .up .text5 .a5 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text5 .a5:hover {
+	color: red
+}
+.text12 .up .text5 .a6 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text5 .a6:hover {
+	color: red
+}
+.text12 .up .text5 .a7 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text5 .a7:hover {
+	color: red
+}
+.text12 .up .text5 .a8 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text5 .a8:hover {
+	color: red
+}
+.text12 .up .text5 .a9 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text5 .a9:hover {
+	color: red
+}
+.text12 .up .text6 {
+	width: 135px;
+	float: left;
+	margin-top: 42px;
+	font-size: 12px;
+	color: #888888;
+	height: 140px;
+	padding-left: 30px
+}
+.text12 .up .text6 .a1 {
+	color: #655;
+	font-size: 16px
+}
+.text12 .up .text6 .a2 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text6 .a2:hover {
+	color: red
+}
+.text12 .up .text6 .a3 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text6 .a3:hover {
+	color: red
+}
+.text12 .up .text6 .a4 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text6 .a4:hover {
+	color: red
+}
+.text12 .up .text6 .a5 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text6 .a5:hover {
+	color: red
+}
+.text12 .up .text6 .a6 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text6 .a6:hover {
+	color: red
+}
+.text12 .up .text6 .a7 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text6 .a7:hover {
+	color: red
+}
+.text12 .up .text6 .a8 {
+	margin-top: 10px;float:left;cursor:pointer;width:50px
+}
+.text12 .up .text6 .a8:hover {
+	color: red
+}
+.text12 .up .text6 .a9 {
+	margin-top: 10px;float:left;margin-left:10px;cursor:pointer;width:50px
+}
+.text12 .up .text6 .a9:hover {
+	color: red
+}
+.text13 {
+	width: 100%;
+	background: #F4F1F1;
+	height: 160px;
+}
+.text13 .jz {
+	text-align: center;
+	padding-top: 30px
+}
+.text13 .jz a {
+	font-size: 12px;
+	color: #888;
+	cursor: pointer
+}
+.text13 .jz a:hover {
+	color: red
+}
+.text13 .jz span {
+	font-size: 12px;
+	color: #888;
+	margin-left: 7px;
+	margin-right: 7px
+}
+.text13 .jz p{font-size: 12px;
+	color: #888;}
+.text13 .jz .fxd {
+	margin-top: 10px;
+	font-size: 12px;
+	color: #888;
+	position:relative
+}
+.text13 .jz .fxd .text15{position:absolute;left:43%}
+.text13 .jz .fxd .tp1{background: url(images/1234_08.jpg) no-repeat;width:30px;height:30px;color: #888;float:left;position:absolute;left:48%;top:0px;cursor:pointer}
+.text13 .jz .fxd .tp1:hover{background:url(images/1234_12.jpg) no-repeat}
+.text13 .jz .fxd .tp2{background: url(images/1234_04.jpg) no-repeat;width:30px;height:30px;color: #888;float:left;position:absolute;left:50%;top:0px;cursor:pointer}
+.text13 .jz .fxd .tp2:hover{background: url(images/images/124_03.jpg) no-repeat 0px 1px}
+.text13 .jz .fxd .tp3{background: url(images/1234_03.jpg) no-repeat;width:30px;height:30px;color: #888;float:left;position:absolute;left:52%;top:0px;cursor:pointer}
+.text13 .jz .fxd .tp3:hover{background: url(images/images/124_08.jpg) no-repeat 1px 1px}
+.text13 .jz .fxd .tp4{background: url(images/327_03.jpg) no-repeat;width:30px;height:30px;color: #888;float:left;position:absolute;left:54%;top:0px;cursor:pointer}
+.text13 .jz .fxd .tp4:hover{background: url(images/images/124_06.jpg) 0px 3px no-repeat}
+
+
+.db{position: fixed;bottom:21px;left:63px;cursor:pointer}
+.db1{position:fixed;bottom:21px;right:103px}
+.db1 .tp1{background:url(images/234_06.jpg) no-repeat;width:50px;height:50px;margin-bottom:9px}
+.db1 .tp1:hover{background:url(images/234_07.jpg) no-repeat 0px -1px}
+.db1 .tp2{background: url(images/234_09.jpg) no-repeat;width:50px;height:50px;margin-bottom:9px}
+.db1 .tp2:hover{background:url(images/234_10.jpg) no-repeat 0px -1px}
+.db1 .tp3{background: url(images/234_03.jpg) no-repeat;width:50px;height:50px}
+.db1 .tp3:hover{background: url(images/234_05.jpg) no-repeat 0px -1px}
+.db1 .tp1 .tp4{position:absolute;right:0px;background:url(images/2325_04.jpg) no-repeat;width:180px;height:180px;filter: alpha(opacity=50);opacity: 0.5;bottom:120px;right:40px;display:none}
+.db1 .tp1 .tp4:hover{background:url(images/2325_09.jpg) no-repeat 0px -1px}
+.db1 .tp1:hover .tp4{display:block}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="auto">
+    <div class="text">
+      <ul>
+        <li >网易云阅读</li>
+        <li>|</li>
+        <li>国风中文网</li>
+        <li>|</li>
+        <li>采薇书院</li>
+        <li>|</li>
+        <li>从电脑上导入书籍</li>
+        <li>|</li>
+        <li>公众号</li>
+        <li>|</li>
+        <li>渠道推广平台</li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+    <div class="text1">
+      <div class="dl">登陆
+        <div class="dl_list"> <a href="#"><i class="ico1"></i>网易云登录</a><a href="#"><i class="ico2"></i>新浪微博登录</a><a  href="#"><i class="ico3"></i>手机号登录</a><a  href="#"><i class="ico4"></i>qq登录</a><a class="ab" href="#"><i  class="ico5"></i>微信登录</a></div>
+      </div>
+      <span>|</span> <a herf="#">注册</a> <span>|</span> <a herf="#">举报</a> </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="content">
+  <div class="auto">
+    <div class="tb">
+      <div class="logo"><img src="images/header_01.png" width="194" height="37" alt=""/></div>
+      <div class="ssk">
+        <input class="t_input" name="" type="text" placeholder="北京，北京">
+        <div class="fdj"><img src="images/header_03.png" width="42" height="36" alt=""/></div>
+        <div class="clear"></div>
+      </div>
+      <div class="text2"><a  class="wddy" herf="#"><i class="ico1"><img src="images/images/35_03.jpg" width="14" height="16" alt=""/></i>我的订阅</a><a  class="wdsj" herf="#"><i class="ico2"><img src="images/images/35_06.jpg" width="17" height="16" alt=""/></i>我的书架</a>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="z">
+      <div class="w960">
+        <div class="zb">
+          <ul>
+            <li class="sy">首页</li>
+            <li>出版图书</li>
+            <li>国风中文网</li>
+            <li>采薇书院</li>
+            <li>漫画</li>
+            <li>订阅</li>
+            <li>排行榜</li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+        <div class="yb"><a  herf="#"><i class="ico1"><img src="images/12345_03.jpg" width="20" height="16" alt=""/></i>作者中心</a><a herf="#"><i class="ico2"><img src="images/2_06.png" width="18" height="18" alt=""/></i>充值</a><a herf="#"><i class="ico3"><img src="images/2_08.png" width="13" height="18" alt=""/></i>客户端</a>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="text3">
+      <div class="w960">
+        <div class="zb1">
+          <div class="text1">
+          <div class="text5">
+          <p><a href="#">都市生活</a><span>|</span><a href="#">官场职场</a><span>|</span><a href="#">玄幻仙侠</a></p>
+          <p><a href="#">悬疑探险</a><span>|</span><a href="#">灵异恐怖</a><span>|</span><a href="#">短篇小说</a></p>
+        </div>
+            <div class="sm">
+              <div class="zb">国风中文网</div>
+              <div class="yb">></div>
+            </div>
+            <div class="xm">
+              <p><a href="#">都市生活</a><span>|</span><a href="#">官场职场</a><span>|</span><a href="#">玄幻仙侠</a></p>
+              <p><a href="#">悬疑探险</a><span>|</span><a href="#">灵异恐怖</a><span>|</span><a href="#">短篇小说</a></p>
+            </div> 
+             
+          </div>
+          <div class="text2">
+          <div class="text6">
+          <p><a href="#">都市生活</a><span>|</span><a href="#">官场职场</a><span>|</span><a href="#">玄幻仙侠</a></p>
+          <p><a href="#">悬疑探险</a><span>|</span><a href="#">灵异恐怖</a><span>|</span><a href="#">短篇小说</a></p>
+        </div>
+            <div class="sm">
+              <div class="zb">国风中文网</div>
+              <div class="yb">></div>
+            </div>
+            <div class="xm">
+              <p><a href="#">都市生活</a><span>|</span><a href="#">官场职场</a><span>|</span><a href="#">玄幻仙侠</a></p>
+              <p><a href="#">悬疑探险</a><span>|</span><a href="#">灵异恐怖</a><span>|</span><a href="#">短篇小说</a></p>
+            </div>
+          </div>
+          <div class="text3">
+          <div class="text7">
+          <p><a href="#">都市生活</a><span>|</span><a href="#">官场职场</a><span>|</span><a href="#">玄幻仙侠</a></p>
+          <p><a href="#">悬疑探险</a><span>|</span><a href="#">灵异恐怖</a><span>|</span><a href="#">短篇小说</a></p>
+        </div>
+            <div class="sm">
+              <div class="zb">国风中文网</div>
+              <div class="yb">></div>
+            </div>
+            <div class="xm">
+              <p><a href="#">都市生活</a><span>|</span><a href="#">官场职场</a><span>|</span><a href="#">玄幻仙侠</a></p>
+              <p><a href="#">悬疑探险</a><span>|</span><a href="#">灵异恐怖</a><span>|</span><a href="#">短篇小说</a></p>
+            </div>
+          </div>
+          <div class="text4">
+          <div class="text8">
+          <p><a href="#">都市生活</a><span>|</span><a href="#">官场职场</a><span>|</span><a href="#">玄幻仙侠</a></p>
+          <p><a href="#">悬疑探险</a><span>|</span><a href="#">灵异恐怖</a><span>|</span><a href="#">短篇小说</a></p>
+        </div>
+            <div class="sm">
+              <div class="zb">国风中文网</div>
+              <div class="yb">></div>
+            </div>
+            <div class="xm">
+              <p><a href="#">都市生活</a><span>|</span><a href="#">官场职场</a><span>|</span><a href="#">玄幻仙侠</a></p>
+              <p><a href="#">悬疑探险</a><span>|</span><a href="#">灵异恐怖</a><span>|</span><a href="#">短篇小说</a></p>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      
+        <div class="yb1">
+          <div class="banner"><img src="images/12.jpg" width="720" height="380" alt=""/></div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text6">
+  <div class="w960">
+    <div class="zbtj">主编推荐</div>
+    <div class="xs"><a class="red">小说</a><span>|</span><a >图书</a><span>|</span><a>订阅</a></div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="text7">
+  <div class="w960">
+    <div class="text1">
+      <div class="zb2"><img src="images/123.jpg" width="114" height="160" alt=""/></div>
+      <div class="yb2">
+        <div class="xbsg">雄霸三国</div>
+        <div class="gjd">孤君道</div>
+        <div class="rg">如果告诉你王允与董卓是同谋，你会信么？如果告诉你董卓火烧雒阳得到朝廷支持，你会相信么？</div>
+        <div class="ljyd">立即阅读></div>
+      </div>
+    </div>
+    <div class="text2">
+      <div class="zb2"><img src="images/123.jpg" width="114" height="160" alt=""/></div>
+      <div class="yb2">
+        <div class="xbsg">雄霸三国</div>
+        <div class="gjd">孤君道</div>
+        <div class="rg">如果告诉你王允与董卓是同谋，你会信么？如果告诉你董卓火烧雒阳得到朝廷支持，你会相信么？</div>
+        <div class="ljyd">立即阅读></div>
+      </div>
+    </div>
+    <div class="text3">
+      <div class="zb2"><img src="images/123.jpg" width="114" height="160" alt=""/></div>
+      <div class="yb2">
+        <div class="xbsg">雄霸三国</div>
+        <div class="gjd">孤君道</div>
+        <div class="rg">如果告诉你王允与董卓是同谋，你会信么？如果告诉你董卓火烧雒阳得到朝廷支持，你会相信么？</div>
+        <div class="ljyd">立即阅读></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+</div>
+<div class="text8">
+  <div class="w960">
+    <div class="left">
+      <div class="head">
+        <div class="gfzww">国风中文网</div>
+        <div class="gd">更多></div>
+      </div>
+      <div class="up">
+        <div class="text1">
+          <div class="zb2"><img src="images/123.jpg" width="114" height="160" alt=""/></div>
+          <div class="yb2">
+            <div class="xbsg">雄霸三国</div>
+            <div class="gjd">孤君道</div>
+            <div class="rg">如果告诉你王允与董卓是同谋，你会信么？如果告诉你董卓火烧雒阳得到朝廷支持，你会相信么？</div>
+            <div class="ljyd">立即阅读></div>
+          </div>
+        </div>
+        <div class="text2">
+          <div class="zb2"><img src="images/123.jpg" width="114" height="160" alt=""/></div>
+          <div class="yb2">
+            <div class="xbsg">雄霸三国</div>
+            <div class="gjd">孤君道</div>
+            <div class="rg">如果告诉你王允与董卓是同谋，你会信么？如果告诉你董卓火烧雒阳得到朝廷支持，你会相信么？</div>
+            <div class="ljyd">立即阅读></div>
+          </div>
+        </div>
+        <div class="text3">
+          <div class="zb2"><img src="images/123.jpg" width="114" height="160" alt=""/></div>
+          <div class="yb2">
+            <div class="xbsg">雄霸三国</div>
+            <div class="gjd">孤君道</div>
+            <div class="rg">如果告诉你王允与董卓是同谋，你会信么？如果告诉你董卓火烧雒阳得到朝廷支持，你会相信么？</div>
+            <div class="ljyd">立即阅读></div>
+          </div>
+        </div>
+        <div class="text4">
+          <div class="zb2"><img src="images/123.jpg" width="114" height="160" alt=""/></div>
+          <div class="yb2">
+            <div class="xbsg">雄霸三国</div>
+            <div class="gjd">孤君道</div>
+            <div class="rg">如果告诉你王允与董卓是同谋，你会信么？如果告诉你董卓火烧雒阳得到朝廷支持，你会相信么？</div>
+            <div class="ljyd">立即阅读></div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="right">
+      <div class="head">国风中文网畅销榜</div>
+      <div class="up">
+        <ul>
+          <li class="a1"><div class="b1"><div class="left"><i>01</i></div><div class="tp1"><img src="images/121" width="73" height="103" alt=""/></div><div class="right"><a class="c1">飘洋过海来爱<br>你：一撞成婚</a><br><a>凌沐</a></div></div><div class="d1"><i>01</i>官梯</div></li>
+          <li class="a2"><div class="b1"><div class="left"><i>01</i></div><div class="tp1"><img src="images/121" width="73" height="103" alt=""/></div><div class="right"><a class="c1">飘洋过海来爱<br>你：一撞成婚</a><br><a>凌沐</a></div></div><div class="d1"><i>01</i>官梯</div></li>
+          <li class="a3"><div class="b1"><div class="left"><i>01</i></div><div class="tp1"><img src="images/121" width="73" height="103" alt=""/></div><div class="right"><a class="c1">飘洋过海来爱<br>你：一撞成婚</a><br><a>凌沐</a></div></div><div class="d1"><i>01</i>官梯</div></li>
+          <li class="a4"><div class="b1"><div class="left"><i>01</i></div><div class="tp1"><img src="images/121" width="73" height="103" alt=""/></div><div class="right"><a class="c1">飘洋过海来爱<br>你：一撞成婚</a><br><a>凌沐</a></div></div><div class="d1"><i>01</i>官梯</div></li>
+          <li class="a5"><div class="b1"><div class="left"><i>01</i></div><div class="tp1"><img src="images/121" width="73" height="103" alt=""/></div><div class="right"><a class="c1">飘洋过海来爱<br>你：一撞成婚</a><br><a>凌沐</a></div></div><div class="d1"><i>01</i>官梯</div></li>
+          <li class="a6"><div class="b1"><div class="left"><i>01</i></div><div class="tp1"><img src="images/121" width="73" height="103" alt=""/></div><div class="right"><a class="c1">飘洋过海来爱<br>你：一撞成婚</a><br><a>凌沐</a></div></div><div class="d1"><i>01</i>官梯</div></li>
+          
+         
+         
+         
+         
+         
+         
+         
+         
+         
+          <li class="bm"><i>-></i>查看更多</li>
+        </ul><div class="clear"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text9">
+  <div class="w960">
+    <div class="up">
+      <div class="left">热门文章</div>
+      <div class="right">更多></div>
+      <div class="clear"></div>
+    </div>
+    <div class="down">
+      <div class="text1"><i><img src="images/1.jpg" width="285" height="180" alt=""/></i><br>
+        <span>胡同文化</span><br>
+        <a>来源：每日一文</a><br>
+        <a >对胡同有着特殊的情怀，它是贯通大街的网络。</a>
+        <div class="ht"><a class="tp1"></a><a>427</a><a class="tp2"></a><a>361</a></div>
+      </div>
+      <div class="text2"><i><img src="images/1.jpg" width="285" height="180" alt=""/></i><br>
+        <span>胡同文化</span><br>
+        <a>来源：每日一文</a><br>
+        <a >对胡同有着特殊的情怀，它是贯通大街的网络。</a>
+        <div class="ht"><a class="tp1"></a><a>427</a><a class="tp2"></a><a>361</a></div>
+      </div>
+      <div class="text3">
+        <div class="wxnl1"><i><img src="images/images/2_18.jpg" width="6" height="12" alt=""/></i><a class="wx">我想你了</a><br>
+          <a class="sbs">谁不是血肉之躯，但总有人活出了铮铮铁骨。</a></div>
+        <div class="wxnl2"><i><img src="images/images/2_18.jpg" width="6" height="12" alt=""/></i><a class="wx">我想你了</a><br>
+          <a class="sbs">谁不是血肉之躯，但总有人活出了铮铮铁骨。</a></div>
+        <div class="wxnl3"><i><img src="images/images/2_18.jpg" width="6" height="12" alt=""/></i><a class="wx">我想你了</a><br>
+          <a class="sbs">谁不是血肉之躯，但总有人活出了铮铮铁骨。</a></div>
+        <div class="wxnl4"><i><img src="images/images/2_18.jpg" width="6" height="12" alt=""/></i><a class="wx">我想你了</a><br>
+          <a class="sbs">谁不是血肉之躯，但总有人活出了铮铮铁骨。</a></div>
+        <div class="wxnl5"><i><img src="images/images/2_18.jpg" width="6" height="12" alt=""/></i><a class="wx">我想你了</a><br>
+          <a class="sbs">谁不是血肉之躯，但总有人活出了铮铮铁骨。</a></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<div class="text10">
+  <div class="w960">
+    <div class="zb">
+      <div class="up">
+        <div  class="yzmh">优质漫画</div>
+        <div class="gd">更多></div>
+      </div>
+      <div class="down">
+        <div class="text1"><a herf="#"><img src="images/123.jpg" width="114" height="160" alt=""/></a>
+          <div class="la">恋爱大神求放过</div>
+          <div class="xj">站在心尖上的那人</div>
+        </div>
+        <div class="text2"><a herf="#"><img src="images/123.jpg" width="114" height="160" alt=""/></a>
+          <div class="la">恋爱大神求放过</div>
+          <div class="xj">站在心尖上的那人</div>
+        </div>
+        <div class="text3"><a herf="#"><img src="images/123.jpg" width="114" height="160" alt=""/></a>
+          <div class="la">恋爱大神求放过</div>
+          <div class="xj">站在心尖上的那人</div>
+        </div>
+        <div class="text4"><a herf="#"><img src="images/123.jpg" width="114" height="160" alt=""/></a>
+          <div class="la">恋爱大神求放过</div>
+          <div class="xj">站在心尖上的那人</div>
+        </div>
+        <div class="text5"><a herf="#"><img src="images/123.jpg" width="114" height="160" alt=""/></a>
+          <div class="la">恋爱大神求放过</div>
+          <div class="xj">站在心尖上的那人</div>
+        </div>
+        <div class="text6"><a herf="#"><img src="images/123.jpg" width="114" height="160" alt=""/></a>
+          <div class="la">恋爱大神求放过</div>
+          <div class="xj">站在心尖上的那人</div>
+        </div>
+        <div class="text7"><a herf="#"><img src="images/123.jpg" width="114" height="160" alt=""/></a>
+          <div class="la">恋爱大神求放过</div>
+          <div class="xj">站在心尖上的那人</div>
+        </div>
+        <div class="text8"><a herf="#"><img src="images/123.jpg" width="114" height="160" alt=""/></a>
+          <div class="la">恋爱大神求放过</div>
+          <div class="xj">站在心尖上的那人</div>
+        </div>
+        <div class="text9"><a herf="#"><img src="images/123.jpg" width="114" height="160" alt=""/></a>
+          <div class="la">恋爱大神求放过</div>
+          <div class="xj">站在心尖上的那人</div>
+        </div>
+        <div class="text10"><a herf="#"><img src="images/123.jpg" width="114" height="160" alt=""/></a>
+          <div class="la">恋爱大神求放过</div>
+          <div class="xj">站在心尖上的那人</div>
+        </div>
+      </div>
+    </div>
+    <div class="yb">
+      <div class="head">国风中文网畅销榜</div>
+      <div class="up">
+        <ul>
+          <li class="a1"><div class="b1"><div class="left"><i>01</i></div><div class="tp1"><img src="images/121" width="73" height="103" alt=""/></div><div class="right"><a class="c1">飘洋过海来爱<br>你：一撞成婚</a><br><a>凌沐</a></div></div><div class="d1"><i>01</i>官梯</div></li>
+          <li class="a2"><div class="b1"><div class="left"><i>01</i></div><div class="tp1"><img src="images/121" width="73" height="103" alt=""/></div><div class="right"><a class="c1">飘洋过海来爱<br>你：一撞成婚</a><br><a>凌沐</a></div></div><div class="d1"><i>01</i>官梯</div></li>
+          <li class="a3"><div class="b1"><div class="left"><i>01</i></div><div class="tp1"><img src="images/121" width="73" height="103" alt=""/></div><div class="right"><a class="c1">飘洋过海来爱<br>你：一撞成婚</a><br><a>凌沐</a></div></div><div class="d1"><i>01</i>官梯</div></li>
+          <li class="a4"><div class="b1"><div class="left"><i>01</i></div><div class="tp1"><img src="images/121" width="73" height="103" alt=""/></div><div class="right"><a class="c1">飘洋过海来爱<br>你：一撞成婚</a><br><a>凌沐</a></div></div><div class="d1"><i>01</i>官梯</div></li>
+          <li class="a5"><div class="b1"><div class="left"><i>01</i></div><div class="tp1"><img src="images/121" width="73" height="103" alt=""/></div><div class="right"><a class="c1">飘洋过海来爱<br>你：一撞成婚</a><br><a>凌沐</a></div></div><div class="d1"><i>01</i>官梯</div></li>
+          <li class="a6"><div class="b1"><div class="left"><i>01</i></div><div class="tp1"><img src="images/121" width="73" height="103" alt=""/></div><div class="right"><a class="c1">飘洋过海来爱<br>你：一撞成婚</a><br><a>凌沐</a></div></div><div class="d1"><i>01</i>官梯</div></li>
+          <li class="a7"><div class="b1"><div class="left"><i>01</i></div><div class="tp1"><img src="images/121" width="73" height="103" alt=""/></div><div class="right"><a class="c1">飘洋过海来爱<br>你：一撞成婚</a><br><a>凌沐</a></div></div><div class="d1"><i>01</i>官梯</div></li>
+          <li class="a8"><div class="b1"><div class="left"><i>01</i></div><div class="tp1"><img src="images/121" width="73" height="103" alt=""/></div><div class="right"><a class="c1">飘洋过海来爱<br>你：一撞成婚</a><br><a>凌沐</a></div></div><div class="d1"><i>01</i>官梯</div></li>
+          <li class="a9"><div class="b1"><div class="left"><i>01</i></div><div class="tp1"><img src="images/121" width="73" height="103" alt=""/></div><div class="right"><a class="c1">飘洋过海来爱<br>你：一撞成婚</a><br><a>凌沐</a></div></div><div class="d1"><i>01</i>官梯</div></li>
+          <li class="bm"><i>-></i>查看更多</li>
+        </ul>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="text11">
+  <div class="w960">
+    <div class="up">关于云阅读</div>
+    <div class="down">
+      <div class="text1">
+        <div class="left"><img src="images/123_14.png" width="36" height="36" alt=""/></div>
+        <div class="right"><a class="t1">网易云阅读</a><br>
+          <a class="t2">最受欢迎的阅读产品</a><br>
+          <a class="t3">关注我们:</a><div class="tp1"></div><div class="tp2"></div><div class="tp3"></div><br>
+          <div class="t4">+关注</div>
+        </div>
+      </div>
+      <div class="text2">
+        <div class="left"><img src="images/images/112_03.png" width="36" height="37" alt=""/></div>
+        <div class="right"><a class="t1">作者中心</a><br>
+          <a class="t2">原创、自媒体、内容商、漫画</a><br>
+          <a class="t3">招募作者，福利优厚</a><br>
+          <div class="t4">投稿></div>
+        </div>
+      </div>
+      <div class="text3">
+        <div class="left"><img src="images/112_20.png" width="36" height="36" alt=""/></div>
+        <div class="right"><a class="t1">客服中心</a><br>
+          <a class="t2">欢迎反馈宝贵意见给我们</a><br>
+          <a class="t3">客服：0571-89853801<br>
+          邮件：reader@188.com<br>
+          QQ：2978661285<br>
+          微信号：Reader163</a><br>
+          <div class="t4">意见反馈></div>
+        </div>
+      </div>
+      <div class="text4">
+        <div class="left"><img src="images/112_21.png" width="36" height="36" alt=""/></div>
+        <div class="right"><a class="t1">商务合作</a><br>
+          <a class="t2">欢迎来电洽谈相关合作</a><br>
+          <a class="t3">广告：0571-89853126<br>
+          资讯：15757831061<br>
+          图书：0571-89852025<br>
+          内容：reader@188.com<br>
+          合作微信：xiaomi1426858</a></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="text12">
+  <div class="w960">
+    <div class="up">
+      <div class="text1">
+        <div class="a1">出版图书</div>
+        <div class="a2">小说作品</div>
+        <div class="a3"> 人文社科</div><br>
+        <div class="a4">成功励志</div>
+        <div class="a5"> 经济管理</div><br>
+        <div class="a6">品质生活</div>
+        <div class="a7">计算机</div><br>
+        <div class="a8">文学作品</div>
+        <div class="a9">更多>></div>
+      </div>
+      <div class="text2">
+          <div class="a1">出版图书</div>
+        <div class="a2">小说作品</div>
+        <div class="a3"> 人文社科</div><br>
+        <div class="a4">成功励志</div>
+        <div class="a5"> 经济管理</div><br>
+        <div class="a6">品质生活</div>
+        <div class="a7">计算机</div><br>
+        <div class="a8">文学作品</div>
+        <div class="a9">更多>></div>
+      </div>
+      <div class="text3">
+          <div class="a1">出版图书</div>
+        <div class="a2">小说作品</div>
+        <div class="a3"> 人文社科</div><br>
+        <div class="a4">成功励志</div>
+        <div class="a5"> 经济管理</div><br>
+        <div class="a6">品质生活</div>
+        <div class="a7">计算机</div><br>
+        <div class="a8">文学作品</div>
+        <div class="a9">更多>></div>
+      </div>
+      <div class="text4">
+        <div class="a1">出版图书</div>
+        <div class="a2">小说作品</div>
+        <div class="a3"> 人文社科</div><br>
+        <div class="a4">成功励志</div>
+        <div class="a5"> 经济管理</div><br>
+        <div class="a6">品质生活</div>
+        <div class="a7">计算机</div><br>
+        <div class="a8">文学作品</div>
+        <div class="a9">更多>></div>
+      </div>
+      <div class="text5">
+        <div class="a1">出版图书</div>
+        <div class="a2">小说作品</div>
+        <div class="a3"> 人文社科</div><br>
+        <div class="a4">成功励志</div>
+        <div class="a5"> 经济管理</div><br>
+        <div class="a6">品质生活</div>
+        <div class="a7">计算机</div><br>
+        <div class="a8">文学作品</div>
+        <div class="a9">更多>></div>
+      </div>
+      <div class="text6">
+        <div class="a1">出版图书</div>
+        <div class="a2">小说作品</div>
+        <div class="a3"> 人文社科</div><br>
+        <div class="a4">成功励志</div>
+        <div class="a5"> 经济管理</div><br>
+        <div class="a6">品质生活</div>
+        <div class="a7">计算机</div><br>
+        <div class="a8">文学作品</div>
+        <div class="a9">更多>></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="text13">
+  <div class="w960">
+    <div class="jz"><a>网易首页</a><span>|</span><a>公司简介</a><span>|</span><a>客户服务</a><span>|</span><a>相关法律</a><span>|</span><a>网站导航</a><span>|</span><a> 意见反馈</a><span>|</span><a> 客服电话</a><span>|</span><a> 帮助中心</a><span>|</span><a> 作者中心</a>
+      <p>网易公司版权所有©1997-2017</p>
+      <div class="fxd"><div class="text15">分享到:</div><div class="tp1"></div><div class="tp2"></div><div class="tp3"></div><div class="tp4"></div></div></div>
+    </div> <div class="clear"></div>
+  </div>
+</div>
+
+<div class="db"><img src="images/345.jpg" width="110" height="220" alt=""/></div>
+<div class="db1"><div class="tp1"><div class="tp4"></div></div><div class="tp2"></div><div class="tp3"></div></div>
+</body>
+</html>
